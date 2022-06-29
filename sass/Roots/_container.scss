@@ -1,27 +1,12 @@
-.container-header{
-      // width: 1200px;
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: 15px;
-   padding-right: 15px;
-    display: flex;
-}
 
 .container{
-  width: 100vw;
-    // width: 1200px;
     margin-left: auto;
    margin-right: auto;
    padding-left: 15px;
    padding-right: 15px;
+   @media screen  and (min-width:480px) {
+    width: 480px;
+    
+   }
     
  }
- .container-footer{ 
-        // width: 1200px;
-    margin-left: auto;
-   margin-right: auto;
-   padding-left: 15px;
-   padding-right: 15px;
-  //  display: flex;
-  // align-content: space-between;
-}

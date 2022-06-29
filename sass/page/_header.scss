@@ -4,19 +4,12 @@
   border-bottom: 1px solid #ececec;
 }
 
-.container-header {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-}
+
 
 .navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 }
 
 .header__logo {
@@ -28,7 +21,7 @@
   letter-spacing: 0.03em;
   color: $primeary-color-text;
   text-decoration: none;
-  margin-right: 93px;
+  // margin-right: 93px;
 }
 
 .header__logo--color {

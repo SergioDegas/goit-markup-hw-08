@@ -14,32 +14,35 @@ color: $primeary-color-text;
 }
 
 .client__list{
-    max-width: 767px;
-    width: calc((100% - 15px)/2);
-    display: flex;
-     justify-content: center;
+    // min-width: 480px;
+   
+    // display: flex;
+    // flex-wrap: wrap;
+    //  justify-content: center;
 }
 
 .client__item{
-    width: calc((100% - 15px)/2);
+    margin: 15px;
+    // width: calc((100% - 15px)/2);
     // width: calc((100%/2));
-    width: 170px;
+    // width: 170px;
     height: 92px;
-    margin-right: 30px;
+    // margin-right: 30px;
     fill:#AFB1B8; 
-    &:last-child{
-    margin-right: 0;
-}
+//     &:last-child{
+//     margin-right: 0;
+// }
 }
 
 
 .client__link{
-    width: calc((100% - 15px)/2);
+    // margin: 15px;
+    // width: calc((100% - 15px)/2);
     
            border: 1px solid #AFB1B8;
     border-radius: 4px;
-    width: 210px;
-    height: 100%;
+    width: 100%;
+    // height: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
