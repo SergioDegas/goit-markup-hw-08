@@ -15,11 +15,11 @@
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container container--position">
           <nav class="navigation">
             <a class="header__logo" href=""><span class="header__logo--color">Web</span>Studio</a>
             
-                <button type="button" class="menu__button"><svg width="40" height="40">
+                <button type="button" class="menu__button menu__button--open js-open-menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="40" height="40">
                             <use href="./svg/symbol-defs.svg#icon-menu"></use>
                         </svg></button>
             <ul class="header__list">
@@ -98,15 +98,15 @@
              <h2 class="work__title">Чем мы занимаемся</h2>
              <ul class="work__list work__list--flex">
                 <li class="work__item"> 
-                    <img src="./image/img.jpg"       alt="Пишем код"         class="work__img" width="370" height="294"> 
+                    <img srcset="./sass/image/w1.jpg 1x, ./sass/image/w1x.jpg 2x" src="./sass/image/w1.jpg"       alt="Пишем код"         class="work__img" width="370" height="294"> 
                     <p class="work__text">
                    Десктопные приложения </p></li>
                 <li class="work__item">
-                      <img src="./image/img(1).jpg"  alt="Настраиваем сайт"  class="work__img" width="370" height="294">
+                      <img srcset="./sass/image/w2.jpg 1x, ./sass/image/w2x.jpg 2x" src="./sass/image/w2.jpg"  alt="Настраиваем сайт"  class="work__img" width="370" height="294">
                       <p class="work__text">
                    Мобильные приложения</p></li>
                 <li class="work__item">
-                    <img src="./image/img(2).jpg"   alt="Дизайн сайта"      class="work__img" width="370" height="294"> 
+                    <img srcset="./sass/image/w3.jpg 1x, ./sass/image/w3x.jpg 2x" src="./sass/image/w3.jpg"   alt="Дизайн сайта"      class="work__img" width="370" height="294"> 
                     <p class="work__text"> 
                    Дизайнерские решения </p></li>
              </ul>
@@ -117,7 +117,7 @@
              <h2 class="team__title">Наша команда</h2>
              <ul class="team__list">
                 <li class="team__item">
-                    <img src="./image/img(3).jpg"  alt="фото Игоря Демьяненко" class="team__img" width="270" height="260">
+                    <img srcset="./sass/image/t1.jpg x1, ./sass/image/t1x.jpg 2x" src="./sass/image/t1.jpg"  alt="фото Игоря Демьяненко" class="team__img"  >
                     <div class="team__container">
                      <h3 class="team__name">Игорь Демьяненко</h3>
                      <p class="team__text">Product Designer</p>
@@ -142,7 +142,7 @@
                     </div>               
                 </li>
                 <li class="team__item">
-                    <img src="./image/img(4).jpg"  alt="фото Ольги Репина"  class="img"  width="270" height="260">
+                    <img srcset="./sass/image/t2.jpg x1, ./sass/image/t2x.jpg 2x" src="./sass/image/t2.jpg"  alt="фото Ольги Репина"  class="team__img"  >
                     <div class="team__container">
                           <h3 class="team__name">Ольга Репина</h3>
                           <p class="team__text">Frontend Developer</p>
@@ -167,7 +167,7 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./image/img(5).jpg"  alt="фото Николая Тарасова"  class="img"  width="270" height="260">
+                    <img srcset="./sass/image/t3.jpg x1, ./sass/image/t3x.jpg 2x" src="./sass/image/t3.jpg"  alt="фото Николая Тарасова"  class="team__img"   >
                     <div class="team__container">
                      <h3 class="team__name">Николай Тарасов</h3>
                      <p class="team__text">Marketing</p>
@@ -192,7 +192,7 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./image/img(6).jpg"  alt="фото Михаила Ермакова"  class="img" width="270" height="260">
+                    <img srcset="./sass/image/t4.jpg x1, ./sass/image/t4x.jpg 2x" src="./sass/image/t4.jpg"  alt="фото Михаила Ермакова"  class="team__img" >
                     <div class="team__container">
                      <h3 class="team__name">Михаил Ермаков</h3>
                      <p class="team__text">UI Designer</p>
@@ -273,19 +273,19 @@
          <section class="footer__social">
             <h2 class="footer__title">Присоединяйтесь </h2>
             <ul class="footer__cos-list">
-                         <li class="footer__item">
+                         <li class="footer__item footer__item--margin">
                             <a href="" class="footer__link">
                                 <svg class="footer__icon" width="20" height="20">
                                    <use href="./svg/symbol-defs.svg#icon-insta"  ></use> </svg></a></li>
-                         <li class="footer__item">
+                         <li class="footer__item footer__item--margin">
                             <a href="" class="footer__link">
                                 <svg class="footer__icon" width="20" height="20">
                                    <use href="./svg/symbol-defs.svg#icon-twit"  ></use></svg></a></li>
-                         <li class="footer__item">
+                         <li class="footer__item footer__item--margin">
                             <a href="" class="footer__link">
                                 <svg class="footer__icon" width="20" height="20">
                                    <use href="./svg/symbol-defs.svg#icon-face"  ></use> </svg></a></li>
-                         <li class="footer__item">
+                         <li class="footer__item footer__item--margin">
                             <a href="" class="footer__link">
                                 <svg class="footer__icon" width="20" height="20">
                                    <use href="./svg/symbol-defs.svg#icon-in"  ></use></svg></a></li>
@@ -362,8 +362,8 @@
             </form> 
         </div>
     </div>
-        <div class="menu">
-            <button type="button" class="menu__button" ><svg width="40" height="40">
+        <div class="menu js-menu-container" id="mobile-menu">
+            <button type="button" class="menu__button menu__button--close js-close-menu" ><svg width="40" height="40">
                             <use href="./svg/symbol-defs.svg#icon-close"></use>
                         </svg></button>
                         
@@ -377,11 +377,12 @@
             </ul>
           <ul class="menu-contacts">
             <li class="menu-contacts__item ">
-                <a class="menu-contacts__link contacts__link--color--font" href="mailto:info@devstudio.com">
-                    info@devstudio.com</a></li>
-            <li class="menu-contacts__item ">
                 <a class="menu-contacts__link contacts__link--color" href="tel:+380961111111">
                     +38 096 111 11 11</a></li>
+            <li class="menu-contacts__item ">
+                <a class="menu-contacts__link contacts__link--font" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a></li>
+            
           </ul>
           <ul class="header__social-list">
             <li class="header__social-item"><a class="header__social-link" href="">Instagram</a></li>
@@ -390,6 +391,13 @@
             <li class="header__social-item"><a class="header__social-link" href="">Linkedln</a></li>
           </ul>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
         <script src="./js/madal.js"></script>
 </body>
 

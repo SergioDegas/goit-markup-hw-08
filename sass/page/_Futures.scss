@@ -1,5 +1,9 @@
 .futures{
-     padding-top: 94px;  
+    //  padding-top: 94px;  
+    @media screen and (min-width:320px) {
+        padding-top: 60px;
+        
+    }
     
 }
 
@@ -7,12 +11,12 @@
 // // display: flex;
 // }
 
-.futures__item{
-    // max-width: 450px;
-    // margin-right: auto;
-    // margin-left: auto;
+// .futures__item{
+//     // max-width: 450px;
+//     // margin-right: auto;
+//     // margin-left: auto;
   
-}
+// }
 
 // .futures__item:not(:last-child){
 //     margin-right: 30px;
