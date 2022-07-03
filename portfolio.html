@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
 
-  <body>
+<body>
     <header class="header">
-      <div class="container container--position">
-        <nav class="navigation">
-          <a class="header__logo" href=""
-            ><span class="header__logo--color">Web</span>Studio</a
-          >
-
-          <button type="button" class="menu__button menu__button--open">
-            <svg width="40" height="40">
-              <use href="./svg/symbol-defs.svg#icon-menu"></use>
-            </svg>
-          </button>
+        <div class="container container--position">
+          <nav class="navigation">
+            <a class="header__logo" href=""><span class="header__logo--color">Web</span>Studio</a>
+            
+                <button type="button" class="menu__button menu__button--open js-open-menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="40" height="40">
+                            <use href="./svg/symbol-defs.svg#icon-menu"></use>
+                        </svg></button>
           <ul class="header__list">
             <li class="header__item">
               <a class="header__link " href="./index.html"
@@ -96,7 +87,7 @@
                 <div class="portfolio__thumb-text">
                   <img
                     class="portfolio__img"
-                    srcset="./sass/image/p1.jpg 1x, ./sass/image/p1x.jpg 2x"
+                    srcset="./image/p1.jpg 1x, ./image/p1x.jpg 2x"
                     src="./image/img1.jpg"
                     alt="Фото"
                     width="370"
@@ -118,7 +109,7 @@
                 <div class="portfolio__thumb-text">
                   <img
                     class="portfolio__img"
-                    srcset="./sass/image/p2.jpg 1x, ./sass/image/p2x.jpg 2x"
+                    srcset="./image/p2.jpg 1x, ./image/p2x.jpg 2x"
                     src="./image/img2.jpg"
                     alt="Фото"
                     width="370"
@@ -142,7 +133,7 @@
                 <div class="portfolio__thumb-text">
                   <img
                     class="portfolio__img"
-                    srcset="./sass/image/p3.jpg 1x, ./sass/image/p3x.jpg 2x"
+                    srcset="./image/p3.jpg 1x, ./image/p3x.jpg 2x"
                     src="./image/img3.jpg"
                     alt="Фото"
                     width="370"
@@ -164,7 +155,7 @@
                 <div class="portfolio__thumb-text">
                   <img
                     class="portfolio__img"
-                    srcset="./sass/image/p4.jpg 1x, ./sass/image/p4x.jpg 2x"
+                    srcset="./image/p4.jpg 1x, ./image/p4x.jpg 2x"
                     src="./image/img4.jpg"
                     alt="Фото"
                     width="370"
@@ -186,7 +177,7 @@
                 <div class="portfolio__thumb-text">
                   <img
                     class="portfolio__img"
-                    srcset="./sass/image/p5.jpg 1x, ./sass/image/p5x.jpg 2x"
+                    srcset="./image/p5.jpg 1x, ./image/p5x.jpg 2x"
                     src="./image/img5.jpg"
                     alt="Фото"
                     width="370"
@@ -208,7 +199,7 @@
                 <div class="portfolio__thumb-text">
                   <img
                     class="portfolio__img"
-                    srcset="./sass/image/p6.jpg 1x, ./sass/image/p6x.jpg 2x"
+                    srcset="./image/p6.jpg 1x, ./image/p6x.jpg 2x"
                     src="./image/img6.jpg"
                     alt="Фото"
                     width="370"
@@ -230,7 +221,7 @@
                 <div class="portfolio__thumb-text">
                   <img
                     class="portfolio__img"
-                    srcset="./sass/image/p7.jpg 1x, ./sass/image/p7x.jpg 2x"
+                    srcset="./image/p7.jpg 1x, ./image/p7x.jpg 2x"
                     src="./image/img7.jpg"
                     alt="Фото"
                     width="370"
@@ -253,7 +244,7 @@
                   <img
                     class="portfolio__img img"
                     src="./image/img8.jpg"
-                    srcset="./sass/image/p8.jpg 1x, ./sass/image/p8x.jpg 2x"
+                    srcset="./image/p8.jpg 1x, ./image/p8x.jpg 2x"
                     alt="Фото"
                     width="370"
                   />
@@ -269,13 +260,13 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__itemt">
+            <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__thumb-text">
                   <img
                     class="portfolio__img"
                     src="./image/img9.jpg"
-                    srcset="./sass/image/p9.jpg 1x, ./sass/image/p9x.jpg 2x"
+                    srcset="./image/p9.jpg 1x, ./image/p9x.jpg 2x"
                     alt="Фото"
                     width="370"
                   />
@@ -298,6 +289,7 @@
     <footer class="footer">
       <div class="container">
         <div class="container-footer">
+          <div class="flex-container">
           <div class="address">
             <a class="footer__logo" href="">
               <span class="footer__logo--color">Web</span>Studio</a
@@ -355,7 +347,7 @@
               </li>
             </ul>
           </section>
-
+          </div>
           <div class="footer__subscribe">
             <p class="footer__title">Подпишитесь на рассылку</p>
             <form class="footer__form">
@@ -379,6 +371,44 @@
         </div>
       </div>
     </footer>
-    <script src="./js/mobile-menu.js"></script>
-  </body>
+
+        <div class="menu js-menu-container" id="mobile-menu">
+            <button type="button" class="menu__button menu__button--close js-close-menu" ><svg width="40" height="40">
+                            <use href="./svg/symbol-defs.svg#icon-close"></use>
+                        </svg></button>
+                        
+            <ul class="menu-header__list">
+                <li class="menu-header__item">
+                    <a class="menu-header__link   " href="./index.html">Студия</a></li>
+                <li class="menu-header__item">
+                    <a class="menu-header__link header__link--color " href="./portfolio.html">Портфолио</a></li>
+                <li class="menu-header__item">
+                    <a class="menu-header__link " href="">Контакты</a></li>
+            </ul>
+          <ul class="menu-contacts">
+            <li class="menu-contacts__item ">
+                <a class="menu-contacts__link contacts__link--color" href="tel:+380961111111">
+                    +38 096 111 11 11</a></li>
+            <li class="menu-contacts__item ">
+                <a class="menu-contacts__link contacts__link--font" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a></li>
+            
+          </ul>
+          <ul class="header__social-list">
+            <li class="header__social-item"><a class="header__social-link" href="">Instagram</a></li>
+            <li class="header__social-item"><a class="header__social-link" href="">Twitter</a></li>
+            <li class="header__social-item"><a class="header__social-link" href="">Facebook</a></li>
+            <li class="header__social-item"><a class="header__social-link" href="">Linkedln</a></li>
+          </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+        <script src="./js/madal.js"></script>
+</body>
+
 </html>
