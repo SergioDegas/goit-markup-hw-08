@@ -15,16 +15,15 @@
 //section//
 .portfolio {
   background-color: $secondary-beckgrond-color;
-   @media screen and (max-width: 1199px) {
-   padding-bottom: 60px;
-  padding-top: 60px;
-}
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
   @media screen and (min-width: 1200px) {
-  padding-bottom: 94px;
-  padding-top: 94px;
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
-}
-  
 
 //button__list//
 .button__list {
@@ -129,8 +128,8 @@
   @media screen and (min-width: 320px) {
     // width: 480px;
     margin-bottom: 30px;
-    &:last-child{
-        margin: 0;
+    &:last-child {
+      margin: 0;
     }
   }
   @media screen and (min-width: 768px) {
