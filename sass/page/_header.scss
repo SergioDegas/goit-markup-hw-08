@@ -2,7 +2,7 @@
 .header {
   background-color: $secondary-beckgrond-color;
   border-bottom: 2px solid #ececec;
-  background-color: #2196f3;
+  // background-color: #2196f3;
 }
 
 .container.container--position {
@@ -180,6 +180,10 @@
     font-size: 12px;
     line-height: 1.16;
   }
+   @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts__icon {
@@ -215,6 +219,7 @@
   // &.menu__button--open{
   //   position: absolute;
   // }
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 767px) {
     display: none;
   }
