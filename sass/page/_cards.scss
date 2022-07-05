@@ -117,6 +117,7 @@
     //  flex-basis: calc((100% - 4 * 15px) / 2);
     display: flex;
     flex-wrap: wrap;
+        align-items: flex-end;
   }
 }
 
@@ -231,6 +232,7 @@
   font-size: 18px;
   line-height: 2;
   color: $primeary-color-text;
+  letter-spacing: 0.06em;
 }
 .portfolio__text {
   margin: 0;
