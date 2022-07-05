@@ -421,6 +421,7 @@ body {
 .hero {
   background: #2F303A;
   text-align: center;
+  background-size: cover;
   margin-right: auto;
   margin-left: auto;
   max-width: 1600px;
@@ -1086,7 +1087,13 @@ body {
 }
 
 .portfolio__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-decoration: none;
   color: #757575;
   cursor: pointer;
@@ -1164,6 +1171,12 @@ body {
   }
 }
 
+.portfolio__container--flex {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .portfolio__link:hover .portfolio__image-text,
 .portfolio__link:focus .portfolio__image-text {
   -webkit-transform: translateY(0%);
@@ -1186,6 +1199,7 @@ body {
   font-size: 18px;
   line-height: 2;
   color: #212121;
+  letter-spacing: 0.06em;
 }
 
 .portfolio__text {
